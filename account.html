@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Account</title>
     <link rel="stylesheet" href="css/login.css"/>
 </head>
 <body>
@@ -13,14 +13,14 @@
             <div class="form_container">
                 <form>
                     <div class="form_title_div">
-                        <p class="form_title_p">Login</p>
+                        <p class="form_title_p">With Us</p>
                     </div>
                     <div>
                         <div>
                             <a>Username</a>
                         </div>
-                        <div id="firstid">
-                            <input type="text" name="username" placeholder="name" class="form_input" id="loginid"/>
+                        <div id="first">
+                            <input type="text" name="username" placeholder="name" class="form_input" id="id"/>
                         </div>
                         <div class="form_text_alert_padding">
                             <div class="form_text_alert"></div>
@@ -30,26 +30,22 @@
                         <div>
                             <a>Password</a>
                         </div>
-                        <div id="secondps">
-                            <input type="password" name="password" placeholder="Enter password" class="form_input" id="loginpassword" />
+                        <div id="second">
+                            <input type="password" name="password" placeholder="Enter password" class="form_input" id="password" />
                         </div>
                         <div class="form_text_alert_padding">
                             <div class="form_text_alert"></div>
                         </div>
                     </div>
                     <div style="height: 10px;"></div>
-                    <div class="loginbutton">
-                        <input type="button" class="form_submit_button" value="Login" onclick="CheckId()"/>
-                    </div>
-                    <div style="height: 10px;"></div>
-                    <div class="loginbutton">
-                        <button type="button" class="form_account_button" onClick="location.href='account.html'">Create Account</button>
-                    </div>
+                    <form class="inbutton">
+                        <input type="button" class="form_account_button" value ="Create Account" onclick="handleSubmitId()"/>
+                    </form>
                 </form>
             </div>
         </div>
     </div>
 
-    <script src="js/login.js"></script>
+<script src="js/account.js"></script>
 </body>
 </html>
