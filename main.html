@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to JHtweet</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
     <span class="js-weather"></span>
@@ -13,26 +14,30 @@
         <h1>00:00</h1>
     </div>
 
+
     <form class="js-form form">
         <input type="text" placeholder="Write your name!!"/>
     </form>
 
-    <h4 class="js-greetings greetings"></h4>
+    <h1 class="js-greetings greetings"></h1>
+
+   
 
     <form class="js-TodoForm">
         <input type="text" placeholder=" Write here!" />
-        <input type="date">
-        <input type="time">
-        <input type="submit" value="Submit">
     </form>
 
     <ul class="js-TodoList"></ul>
 
-
+    <button type="button"  onClick="location.href='Board.html'">Board</button>
+    <button type="button"  onClick="location.href='scheduler.html'">Scheduler</button>
+    <button type="button" onclick="boom()">BOOM</button>
+        
     <script src="js/Clock.js"></script>
     <script src="js/Todo.js"></script>
     <script src="js/Weather.js"></script>
     <script src="js/Backimg.js"></script>
     <script src="js/Greeting.js"></script>
+    <script src="js/clear.js"></script>
 </body>
 </html>

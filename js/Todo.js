@@ -1,7 +1,7 @@
 const Todoform = document.querySelector(".js-TodoForm"),
-        TodoInput = Todoform.querySelector("input"),
-        TodoDate = Todoform.querySelector("input"),
-        TodoTime = Todoform.querySelector("input"),
+        TodoInput = Todoform.querySelectorAll("input"),
+        // TodoDate = Todoform.querySelector(".input"),
+        // TodoTime = Todoform.querySelector("..input"),
         TodoList = document.querySelector(".js-TodoList");
 
 const  TODO_LS = "Todos";
@@ -25,13 +25,14 @@ function SaveTodos()
     localStorage.setItem(TODO_LS, JSON.stringify(TodoArr));
 }
 
-function PaintTodo(text, date, time)
+function PaintTodo(text)
 {
-   
     const li = document.createElement("li");
+
     const delBtn = document.createElement("button");
     delBtn.innerText ="❌";
     delBtn.addEventListener("click", DeleteTodo);
+    
     const span = document.createElement("span");
     span.innerText = text;
     const newId = TodoArr.length + 1;
@@ -44,6 +45,7 @@ function PaintTodo(text, date, time)
         text : text,
         id : newId,
         };
+        console.log(TodoObj);
         TodoArr.push(TodoObj);
         SaveTodos()
 }
@@ -52,9 +54,8 @@ function HandleSubmit(event)
 {
     event.preventDefault();
     const currentVlaue = TodoInput.value;
-    const currentDate = TodoDate.value;
-    const currentTime = TodoTime.value;
-    PaintTodo(currentVlaue, currentDate, currentTime);
+    
+    PaintTodo(currentVlaue);
     TodoInput.value ="";
 }
 
