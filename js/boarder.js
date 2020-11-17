@@ -42,32 +42,13 @@ function onEditSubmit(event)
     console.log(listObj);
     boardListObj.push(listObj);
     SaveList();
-    title.value ="";
-    content.value="";
+    // title.value ="";
+    // content.value="";
 
-//     const author = JSON.parse(localStorage.getItem(USER_LS)); 
-//     const lists = JSON.parse(localStorage.getItem(BOARDLIST_LS));
-// if(!list){
-//     const objArr =[];
-//     objArr.push({
-//         num: `${nums++}`,
-//         title: `${title}`,
-//         author: `${author}`,
-//         date: `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()}.`,
-//         content: `${content}`
-//     });
-//     localStorage.setItem(BOARDLIST_LS, JSON.stringify(objArr));
-// }
-// else{
-//     lists.push({
-//         num: `${nums++}`,
-//         title: `${title}`,
-//         author: `${author}`,
-//         date: `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()}.`,
-//         content: `${content}`
-//     });
-//     localStorage.setItem(BOARDLIST_LS, JSON.stringify(lists));
-// }
+    titleInput.value = '';
+    contentInput.value = '';
+
+    window.location.reload();
 }
 
 
