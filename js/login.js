@@ -13,7 +13,8 @@ function CheckId(){
         location.href ="main.html";
     }
     else{
-        alter("Wrong!!");
+        alert("Wrong!!");
+        location.reload();
     }
 }
 

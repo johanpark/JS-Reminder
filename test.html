@@ -259,12 +259,12 @@ contentsContainer.appendChild(contentsContent);
 }
  
 function assignIndex() {
-const lists = JSON.parse(localStorage.getItem(BOARDLIST_LS));
-if (!lists) {
-nums = 0;
-} else {
-nums = parseInt(lists[lists.length - 1].num) + 1;
-}
+    const lists = JSON.parse(localStorage.getItem(BOARDLIST_LS));
+    if (!lists) {
+        nums = 0;
+    } else {
+        nums = parseInt(lists[lists.length - 1].num) + 1;
+    }
 }
  
 function onEditorFormSubmit(e) {
@@ -276,14 +276,14 @@ const content = contentInput.value;
 const lists = JSON.parse(localStorage.getItem(BOARDLIST_LS));
 if (!lists) {
 const objArr = [];
-objArr.push({
-num: `${nums++}`,
-title: `${title}`,
-author: `${author}`,
-date: `${date.getFullYear()}.${date.getMonth() +
-1}.${date.getDate()}.`,
-views: `${views++}`,
-content: `${content}`
+    objArr.push({
+    num: `${nums++}`,
+    title: `${title}`,
+    author: `${author}`,
+    date: `${date.getFullYear()}.${date.getMonth() +
+    1}.${date.getDate()}.`,
+    views: `${views++}`,
+    content: `${content}`
 });
  
 localStorage.setItem(BOARDLIST_LS, JSON.stringify(objArr));

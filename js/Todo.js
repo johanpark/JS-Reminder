@@ -19,6 +19,12 @@ TodoArr = CleanTodos;
 SaveTodos();
 }
 
+function CheckTodo(event){
+    const btn = event.target;
+    const li = btn.parentNode;
+
+}
+
 function SaveTodos()
 { 
 localStorage.setItem(TODO_LS, JSON.stringify(TodoArr));
@@ -30,12 +36,18 @@ const li = document.createElement("li");
 const delBtn = document.createElement("button");
 delBtn.innerText ="❌";
 delBtn.addEventListener("click", DeleteTodo);
+
+const ckBtn = document.createElement("button");
+ckBtn.innerText ="✔";
+ckBtn.addEventListener("click",CheckTodo);
+
 const span = document.createElement("span");
 span.innerText = text;
 const newId = TodoArr.length + 1;
 
-li.appendChild(delBtn);
 li.appendChild(span);
+li.appendChild(ckBtn)
+li.appendChild(delBtn);
 li.id  = newId;
 TodoList.appendChild(li);
 const TodoObj = {

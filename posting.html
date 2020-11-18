@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/board.css">
+    <title>Posting</title>
+</head>
+<body>
+        <div>
+            <div style="padding: 20px;"></div>
+            <div class="login_container">
+                <div class="form_container">
+                    <form id="editor-form">
+                        <div class="form_title_div">
+                            <p class="form_title_p">Posting</p>
+                        </div>
+                        <div>
+                            <div>
+                                <a>Title</a>
+                            </div>
+                            <div>
+                                <input type="text" placeholder="Title" class="form_input" id="editor-title-input"/>
+                            </div>
+                            <div class="form_text_alert_padding">
+                                <div class="form_text_alert"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <a>Content</a>
+                            </div>
+                            <div>
+                                <input type="text"  placeholder="Enter content" class="form_input" id="editor-content-input" />
+                            </div>
+                            <div class="form_text_alert_padding">
+                                <div class="form_text_alert"></div>
+                            </div>
+                        </div>
+                        <div style="height: 10px;"></div>
+                        <form>
+                            <button class="form_submit_button" id="editor-submit-btn" onClick="location.href='Board.html'">Submit</button>
+                        </form>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <script src="js/Posting.js"></script>
+</body>
+</html>

@@ -35,13 +35,43 @@ top: 0;
 left: 0;
 z-index: -1;  
 animation: fadeIn.5s linear; 
+filter: grayscale(40%);
 }
 
 h1{
     text-align: center;
-    font-size: 30px;
+}
+.js-clock{
+    font-size: 60px;
+}
+.clock{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.js-greetings{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 span{
     font-size: 20px;
+}
+.js-weather{
+    font-size: 30px;
+}
+.form-input{
+    background-color: white;
+    width: 30%; 
+    height: 30px; 
+    border: 1px solid; 
+    border-radius: 15px; 
+    border-color: gray;
+    outline: none;
+    margin-left: 35%;
+}
+.js-TodoList{
+    text-align: center;
+    list-style:none;
 }
