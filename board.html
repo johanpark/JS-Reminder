@@ -7,7 +7,11 @@
     <title>Board</title>
 </head>
 <body>
-    <main class="main__container">
+    <main >
+        <div class="container">
+        <div class="title_div">
+            <p class="title_p">Health Gallery</p>
+        </div>
         <div class="board__container">
         <table class="board">
         <thead class="board__table-head">
@@ -22,8 +26,10 @@
         </table>
         <div class="board__index-container" id="index-container"></div>
         </div>
-        <button type="button"  onClick="location.href='main.html'">Main Page</button>
-        <button type="button"  onClick="location.href='Posting.html'">Posting</button>
+        <button type="button"  onClick="location.href='main.html'" id="btn">Main Page</button>
+        <div style="height: 10px;"></div>
+        <button type="button"  onClick="location.href='Posting.html'" id="btn">Posting</button>
+        </div>
 
         <div class="contents__container"></div>
     </main>

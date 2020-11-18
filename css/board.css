@@ -1,61 +1,77 @@
-
-
-  
-  .login_container{
-    width: 380px; 
+body{
+    text-align: center;
+}
+.container{
+    width: 100%; 
     height: 400px; 
     margin: auto; 
     border-radius: 30px;
     box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
-
-.form_container{
-    width: 300px;
-    margin: auto;
-}
-
-.form_title_div{
+.title_div{
     margin: auto; 
     text-align: center;
 }
 
-.form_title_p{
+.title_p{
     font-weight: bold; 
     font-size: 30px; 
     display: inline-block; 
     padding-top: 8px;
 }
 
-.form_input{
-    width: 98%; 
-    height: 30px; 
-    border: 1px solid; 
-    border-radius: 10px; 
-    border-color: gray;
-    outline: none;
-}
+.board {
+    width: 600px;
+    text-align: center;
+    margin-bottom: 15px;
+    }
+     
+    .board__index-container {
+    position: absolute;
+    bottom: 10px;
+    }
+     
+    .board__index-link {
+    all: unset;
+    margin-right: 5px;
+    }
+     
+    .board__index-link:hover {
+    cursor: pointer;
+    color: blue;
+    }
 
-#editor-content-input{
-  height: 60px;
-}
+    .contents__titles {
+        width: 600px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.08);
+        margin-bottom: 20px;
+        }
+         
+        .contents__column {
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        }
+         
+        .contents__content {
+        width: 600px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        }
 
-.form_text_alert{
-    height: 20px;
-}
-
-.form_text_alert_padding{
-    padding-bottom: 10px;
-}
-
-
-
-.form_submit_button{
-    width: 100%; 
+        #btn{
+            width: 50%; 
     height: 44px; 
-    background-color: rgb(234 67 53); 
+    background-color: rgb(83, 154, 236);
     border: 1px; 
-    border-radius: 30px; 
+    border-radius: 15px; 
     color: white; 
     font-size: 17px; 
     font-weight: 500;
-}
+        }
