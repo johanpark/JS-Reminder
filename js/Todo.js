@@ -2,10 +2,9 @@
 const Todoform = document.querySelector(".js-TodoForm"),
 TodoInput = Todoform.querySelector("input"),
 TodoList = document.querySelector(".js-TodoList");
-
 const  TODO_LS = "Todos";
 let TodoArr = [];
-
+let date = new Date();
 
 function DeleteTodo(event)
 {
@@ -52,7 +51,8 @@ li.id  = newId;
 TodoList.appendChild(li);
 const TodoObj = {
 text : text,
-id : newId
+id : newId,
+date: `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()}.`
 };
 TodoArr.push(TodoObj);
 SaveTodos()
