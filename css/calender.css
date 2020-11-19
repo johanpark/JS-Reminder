@@ -142,3 +142,15 @@ tr td:active {
 .sat{
   color: blue;
 }
+
+#btn{
+  width: 30%; 
+height: 44px; 
+background-color: rgb(83, 154, 236);
+border: 1px; 
+border-radius: 15px; 
+color: white; 
+font-size: 17px; 
+font-weight: 500;
+margin-left: 250px;
+}
