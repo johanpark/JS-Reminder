@@ -28,21 +28,22 @@ body{
 }
 
 .bgimage{
+    background-size: auto;
 position: absolute;
-width: 100%;
-height: 100%;
+/* width: 100%;
+height: 100%; */
 top: 0;
 left: 0;
 z-index: -1;  
 animation: fadeIn.5s linear; 
-filter: grayscale(45%);
+/* filter: grayscale(45%); */
 }
 
 h1{
     text-align: center;
 }
 .js-clock{
-    font-size: 60px;
+    font-size: 70px;
 }
 .clock{
     margin-top: 50px;
@@ -50,7 +51,7 @@ h1{
 }
 
 .js-greetings{
-    font-size: 50px;
+    font-size: 60px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
