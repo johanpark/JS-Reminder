@@ -36,25 +36,27 @@
           <table id="calendar" align="center">
             <thead>
               <tr>
-                <td><label onclick="prevCalendar();"></label></td>
+                <td><label onclick="prevCalendar();"><</label></td>
                 <td align="center" id="monthAndYear" colspan="5"></td>
                 <td><label onclick="nextCalendar()">> </label></td>
               </tr>
               <tr>
-                <td align="center">S</td>
-                <td align="center">M</td>
-                <td align="center">T</td>
-                <td align="center">W</td>
-                <td align="center">T</td>
-                <td align="center">F</td>
-                <td align="center">S</td>
+                <td align="center" class="sun">Sun</td>
+                <td align="center">Mon</td>
+                <td align="center">Tue</td>
+                <td align="center">Wed</td>
+                <td align="center">Thu</td>
+                <td align="center">Fri</td>
+                <td align="center" class="sat">Sat</td>
               </tr>
             </thead>
             <tbody id="calendar-body"></tbody>
           </table>
-        </div>
+          <button type="button"  onClick="location.href='main.html'" id="btn">Main</button>
+        </div>  
       </div>
     </div>
+  
     <script src="js/calender.js"></script>
   </body>
 </html>
