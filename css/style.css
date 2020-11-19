@@ -35,7 +35,7 @@ top: 0;
 left: 0;
 z-index: -1;  
 animation: fadeIn.5s linear; 
-filter: grayscale(40%);
+filter: grayscale(45%);
 }
 
 h1{
@@ -59,7 +59,7 @@ span{
     font-size: 20px;
 }
 .js-weather{
-    font-size: 30px;
+    font-size: 40px;
 }
 .form-input{
     background-color: white;
@@ -76,7 +76,7 @@ span{
     list-style:none;
     overflow:auto; 
     width:500px; 
-    height:50px;
+    height:200px;
     margin: auto;
     padding-left: 0px;
 }

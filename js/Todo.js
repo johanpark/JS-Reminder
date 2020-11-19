@@ -2,9 +2,12 @@
 const Todoform = document.querySelector(".js-TodoForm"),
 TodoInput = Todoform.querySelector("input"),
 TodoList = document.querySelector(".js-TodoList");
-const  TODO_LS = "Todos";
-let TodoArr = [];
+// const  TODO_LS = "Todos";
 let date = new Date();
+let  TODO_LS = (date.getDate()) + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+console.log(TODO_LS);
+let TodoArr = [];
+
 
 function DeleteTodo(event)
 {
@@ -18,11 +21,7 @@ TodoArr = CleanTodos;
 SaveTodos();
 }
 
-function CheckTodo(event){
-    const btn = event.target;
-    const li = btn.parentNode;
 
-}
 
 function SaveTodos()
 { 
@@ -36,23 +35,17 @@ const delBtn = document.createElement("button");
 delBtn.innerText ="❌";
 delBtn.addEventListener("click", DeleteTodo);
 
-const ckBtn = document.createElement("button");
-ckBtn.innerText ="✔";
-ckBtn.addEventListener("click",CheckTodo);
-
 const span = document.createElement("span");
 span.innerText = text;
 const newId = TodoArr.length + 1;
 
 li.appendChild(span);
-li.appendChild(ckBtn)
 li.appendChild(delBtn);
 li.id  = newId;
 TodoList.appendChild(li);
 const TodoObj = {
+ id : newId,   
 text : text,
-id : newId,
-date: `${date.getFullYear()}.${date.getMonth() + 1}.${date.getDate()}.`
 };
 TodoArr.push(TodoObj);
 SaveTodos()
@@ -78,9 +71,9 @@ parsedTodos.forEach(function(Todo){
 }
 }
 
-function init()
+function start()
 {
 loadTodos();
 Todoform.addEventListener("submit", HandleSubmit);
 }
-init();
+start();
