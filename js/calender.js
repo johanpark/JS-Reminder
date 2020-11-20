@@ -223,7 +223,7 @@ function paintToDo(text) {
 }
 
 function deleteToDo(e) {
-  let confirm_delete = confirm("삭제하시겠습니까?");
+  let confirm_delete = confirm("You want delete??");
   if (confirm_delete === true) {
     let btn = e.target;
     let li = btn.parentNode;
@@ -238,7 +238,7 @@ function deleteToDo(e) {
 function delAll(e) {
   let length = e.target.parentNode.parentNode.children[2].children.length;
   if (length) {
-    if (confirm(`list를 전부 삭제하시겠습니까?`)) {
+    if (confirm(`Delete all list?`)) {
       for (let i = 0; i < length; i++) {
         e.target.parentNode.parentNode.children[2].children[0].remove();
       }
